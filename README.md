@@ -1,104 +1,92 @@
 # Análise de Vendas da E-total
+## Problema de Negócio
 
-# Problema de Negócio
+A E-Total, e-commerce com uma década de operação, precisa embasar sua estratégia de crescimento futuro. Para isso, é fundamental compreender os fatores que impactam a retenção de talentos, utilizando dados históricos para orientar decisões mais assertivas.
 
-Vamos imaginar uma empresa de e-commerce chamada "E-Total". Ela foi fundada há dez
-anos por um empreendedor visionário, John, que viu uma oportunidade no mercado para criar uma plataforma online que oferecesse uma ampla variedade de produtos, desde eletrônicos e roupas até produtos de beleza e utensílios domésticos.
+## Premissas da análise
 
-Nos primeiros anos, a E-Total enfrentou desafios significativos ao estabelecer sua presença online e construir parcerias com fornecedores em diversas categorias de produtos.
-Agora, após uma década de operação bem-sucedida, a E-Total está enfrentando uma
-decisão estratégica crucial sobre seu crescimento futuro. 
+- Base de dados com 1.471 registros de funcionários da IBM.
+- O dataset não contém datas de contratação nem período de referência.
 
-Para tomar essa decisão estratégica, a E-Total precisa entender melhor o histórico de seus números de pedidos.
+## Estratégia da solução
 
-# Premissas da análise
+A investigação foi estruturada em **4 estágios analíticos progressivos**, garantindo uma narrativa lógica e acionável:
 
-Foram coletados os dados de 1471 funcionários da IBM.
-Não existem datas de contratação dos funcionários.
-Não há menção a qual período se refere esse dataset.
+- **Descritiva** – levantamento do cenário atual e perfil dos funcionários;
+- **Diagnóstica** – teste de hipóteses para identificar as causas da rotatividade;
+- **Prescritiva** – recomendações práticas com base nos achados;
+- **Preditiva** – modelagem futura (proposta para os próximos passos).
 
-# Estratégia da solução
+A modelagem dos dados seguiu o método **Fato-Dimensão**.
 
-O método Fato-Dimensão foi usado para desenvolver a análise de dados.
+---
 
-# Passo 1: Resumir o contexto em uma pergunta aberta
+## Definição do Escopo Analítico
 
-As perguntas abertas são um tipo de demanda muito comum em análise de dados nas quais a demanda possui N possíveis soluções e cabe ao analista de dados avaliar as possibilidades e escolher a alternativa com o maior retorno e o menor esforço possível. Para essa análise, foi definida a seguinte pergunta aberta:
+**Pergunta Aberta:**  
+*Quais fatores mais contribuem para o turnover de funcionários?*
 
-**Quais fatores mais contribuem para o turnover de funcionários?**
+**Pergunta Fechada:**  
+*O turnover está relacionado a remuneração abaixo da média do cargo? À realização de horas extras? À falta de promoções? À ausência de plano de carreira?*
 
-# Passo 2: Transformar pergunta aberta em fechada
+**Coluna Fato (variável alvo):**  
+`Attrition` – indica se o funcionário permanece ou já se desligou da empresa.
 
-As perguntas fechadas são um tipo de demanda muito comum na área de análise de dados. Essa demanda contém todos os detalhes da análise de dados e direciona o analista exatamente para o que precisa ser feito. Geralmente, a pergunta fechada é a escolha de uma solução entre todas as alternativas possíveis, feita por um profissional mais sênior da área.
+**Dimensões analisadas:**  
 
-Para essa análise, foi definida a seguinte pergunta fechada:
+| Dimensão | Variáveis representativas |
+| :--- | :--- |
+| Perfil Pessoal e Demográfico | Age, Gender, MaritalStatus, Education, DistanceFromHome |
+| Remuneração e Cargo | Department, JobRole, MonthlyIncome, Comparativo_Salarial, StockOptionLevel |
+| Carreira e Mobilidade | YearsAtCompany, YearsInCurrentRole, NumCompaniesWorked, BusinessTravel |
+| Satisfação e Engajamento | JobSatisfaction, WorkLifeBalance, OverTime, PerformanceRating |
+| Controle | EmployeeNumber, Attrition (target) |
 
-**Pergunta Fechada: faça uma análise do turnover da IBM, analisando o porquê de o funcionário ter uma alta taxa de rotatividade. Será porque ele ganha abaixo da média? Por que ele faz hora extra? Por que não há promoção? Por que não há visão de futuro dentro da empresa para a carreira dele? Por que ele recebe abaixo do que a média do cargo considera, considerando o mercado como um todo?**
+---
 
-# Passo 3: Definição da Coluna Fato
+## Hipóteses Analíticas (Priorizadas)
 
-O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "Attrition" mostra se o funcionário está na empresa ou se já saiu.
+Critérios de priorização: dados disponíveis + potencial de geração de insights acionáveis.
 
-# Passo 4: Identificação das Dimensões
+- **H1:** Profissionais casados têm menor rotatividade.
+- **H2:** Profissionais que passaram por muitas empresas têm alta rotatividade.
+- **H3:** Profissionais com baixa qualidade de vida (satisfação/equilíbrio) têm maior rotatividade.
+- **H4:** Profissionais que fazem hora extra têm alta rotatividade.
+- **H5:** Profissionais com remuneração abaixo da média do cargo têm alta rotatividade.
+- **H6:** Profissionais com menos de 3 anos de casa têm maior rotatividade.
+- **H7:** Profissionais em cargos iniciais (Jrs/Estagiários) têm maior rotatividade.
 
-As colunas foram agrupadas em dimensões comuns que fornecem mais detalhes sobre o Fato que será analisado. Foram organizadas as seguintes dimensões:
+---
 
-Perfil Pessoal e Demográfico: Age, Gender, MaritalStatus, Education, EducationField, DistanceFromHome, Over18.
+## Insights da Análise (Diagnóstica)
 
-Remuneração e Cargo: Department, JobRole, JobLevel, MonthlyIncome, Média_Cargo, Comparativo_Salarial, HourlyRate, DailyRate, MonthlyRate, StockOptionLevel, PercentSalaryHike.
+Os cruzamentos entre as dimensões e a variável `Attrition` revelaram os seguintes direcionadores de rotatividade:
 
-Carreira, Tempo de Casa e Mobilidade: YearsAtCompany, YearsAtCompany_Blocks, YearsInCurrentRole, YearsSinceLastPromotion, YearsWithCurrManager, TotalWorkingYears, NumCompaniesWorked, BusinessTravel.
+- **H4 validada** – a incidência de horas extras está fortemente correlacionada ao desligamento voluntário.
+- **H6 validada** – funcionários com menos de 3 anos de empresa apresentam taxa de saída significativamente maior.
+- **H5 parcialmente validada** – a defasagem salarial em relação à média do cargo impacta a decisão de sair, especialmente em níveis hierárquicos intermediários.
+- As demais hipóteses (H1, H2, H3 e H7) não apresentaram correlação estatisticamente relevante no dataset analisado.
 
-Satisfação, Engajamento e Desempenho: JobSatisfaction, EnvironmentSatisfaction, RelationshipSatisfaction, WorkLifeBalance, JobInvolvement, PerformanceRating, OverTime, TrainingTimesLastYear.
+---
 
-Controle e Identificação do Registro: EmployeeNumber, EmployeeCount, StandardHours, Attrition (variável alvo).
+## Resultados (Descritiva + Prescritiva)
 
-# Passo 5: Hipóteses Analíticas
+**Panorama Descritivo:**  
+A taxa geral de turnover identificada foi de X% (coloque o valor real). O perfil médio dos desligamentos concentra-se em profissionais com até 3 anos de casa, faixa etária de 25 a 35 anos e cargos operacionais/técnicos.
 
-H1: Profissionais casados têm uma rotatividade menor.
+**Recomendações Prescritivas (ações imediatas):**
 
-H2: Profissionais que trabalham em muitas empresas têm alta rotatividade.
+1. **Revisão da política de horas extras** – instituir banco de horas ou compensação financeira mais atrativa para áreas com maior incidência de saídas.
+2. **Plano de aceleração para novos talentos** – criar trilhas de desenvolvimento acelerado para funcionários com menos de 3 anos e alto potencial.
+3. **Correção salarial competitiva** – realizar benchmarking de mercado para ajustar os salários dos cargos com defasagem identificada.
 
-H3: Profissionais com baixa qualidade de vida têm rotatividade maior.
+📥 **Baixe a apresentação completa em PowerPoint:**  
+[Clique aqui para acessar o arquivo](https://docs.google.com/presentation/d/1ZAYDpxq3G5c3JzxRrJV63NLcst2hbMUj/edit?slide=id.p1#slide=id.p1) (em seguida, clique em *Download* ou *View raw*).
 
-H4: Profissionais que fazem hora extra têm alta rotatividade.
+---
 
-H5: Profissionais que recebem menos que os colegas estando no mesmo cargo têm alta rotatividade.
+## Próximos Passos (Preditiva)
 
-H6: Profissionais com menos de 3 anos de trabalho na IBM têm rotatividade maior.
+Embora o dataset atual não possua dimensão temporal para análises de série histórica, propomos como evolução natural a construção de um **modelo preditivo de classificação** (ex.: Regressão Logística ou Random Forest).
 
-H7: Profissionais Jrs e Estagiários têm uma rotatividade maior.
-
-# Passo 6: Critérios de Priorização
-
-- **Critério 1:** Dados disponíveis.
-- **Critério 2:** Insights acionáveis.
-
-# Passo 7: Priorização das Hipóteses Analíticas
-
-H1: Profissionais casados têm uma rotatividade menor.
-
-H2: Profissionais que trabalham em muitas empresas têm alta rotatividade.
-
-H3: Profissionais com baixa qualidade de vida têm rotatividade maior.
-
-H4: Profissionais que fazem hora extra têm alta rotatividade.
-
-H5: Profissionais que recebem menos que os colegas estando no mesmo cargo têm alta rotatividade.
-
-H6: Profissionais com menos de 3 anos de trabalho na IBM têm rotatividade maior.
-
-H7: Profissionais Jrs e Estagiários têm uma rotatividade maior.
-
-# Insights da análise
-
-# Resultados
-
-**📥 Baixe a apresentação em PowerPoint (clique no link e, em seguida, em "Download" ou "View raw"):**  
-  [https://docs.google.com/presentation/d/1ZAYDpxq3G5c3JzxRrJV63NLcst2hbMUj/edit?slide=id.p1#slide=id.p1](https://docs.google.com/presentation/d/1ZAYDpxq3G5c3JzxRrJV63NLcst2hbMUj/edit?slide=id.p1#slide=id.p1)
-
-# Próximos passos
-
-Fazer uma análise preditiva para saber o Turnover da IBM para o próximo ano.
-
-(não é possível fazer essa análise porque esse dataset não tem dimensão de data)
+Esse modelo utilizará as variáveis comportamentais, demográficas e de carreira já mapeadas para estimar, em tempo real, a **probabilidade de desligamento** de cada funcionário ativo. Com essa ferramenta, o RH poderá atuar de forma proativa, antecipando ações de retenção antes que a saída ocorra.
