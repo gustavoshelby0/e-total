@@ -40,13 +40,13 @@ A modelagem dos dados seguiu o método **Fato-Dimensão**.
 
 **Dimensões analisadas:**  
 
-| Dimensão | Variáveis representativas |
-| :--- | :--- |
-| Perfil Pessoal e Demográfico | Age, Gender, MaritalStatus, Education, DistanceFromHome |
-| Remuneração e Cargo | Department, JobRole, MonthlyIncome, Comparativo_Salarial, StockOptionLevel |
-| Carreira e Mobilidade | YearsAtCompany, YearsInCurrentRole, NumCompaniesWorked, BusinessTravel |
-| Satisfação e Engajamento | JobSatisfaction, WorkLifeBalance, OverTime, PerformanceRating |
-| Controle | EmployeeNumber, Attrition (target) |
+Dimensão	Variáveis representativas
+Tempo (Data do Pedido)	order_purchase_timestamp, order_purchase_month, order_purchase_year_month, order_purchase_year
+Cliente (Quem Comprou)	customer_id, customer_city, customer_state
+Vendedor (Quem Vendeu)	seller_id, seller_city, seller_state
+Produto (O que Foi Vendido)	product_id, product_category_name
+Pedido (Transação / Cabeçalho)	order_id, order_status (para saber se foi entregue, cancelado, etc.)
+Item do Pedido (Linha / Sequência)	order_item_id (identifica a posição do produto dentro do pedido)
 
 ---
 
