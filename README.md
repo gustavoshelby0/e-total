@@ -1,12 +1,18 @@
 # Análise de Vendas da E-total
 ## Problema de Negócio
 
-A E-Total, e-commerce com uma década de operação, precisa embasar sua estratégia de crescimento futuro. Para isso, é fundamental compreender os fatores que impactam a retenção de talentos, utilizando dados históricos para orientar decisões mais assertivas.
+Vamos imaginar uma empresa de e-commerce chamada "E-Total". Ela foi fundada há dez
+anos por um empreendedor visionário, John, que viu uma oportunidade no mercado para criar uma plataforma online que oferecesse uma ampla variedade de produtos, desde eletrônicos e roupas até produtos de beleza e utensílios domésticos.
+Nos primeiros anos, a E-Total enfrentou desafios significativos ao estabelecer sua presença online e construir parcerias com fornecedores em diversas categorias de produtos.
+Agora, após uma década de operação bem-sucedida, a E-Total está enfrentando uma
+decisão estratégica crucial sobre seu crescimento futuro. 
+
+Para tomar essa decisão estratégica, a E-Total precisa entender melhor o histórico de seus números de pedidos.
 
 ## Premissas da análise
 
-- Base de dados com 1.471 registros de funcionários da IBM.
-- O dataset não contém datas de contratação nem período de referência.
+- Base de dados com 4.000mil vendas da empresa E-total
+- O dataset contém datas de vendas do periodo de 2017-2018.
 
 ## Estratégia da solução
 
