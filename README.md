@@ -18,10 +18,10 @@ Para tomar essa decisão estratégica, a E-Total precisa entender melhor o hist�
 
 A investigação foi estruturada em **4 estágios analíticos progressivos**, garantindo uma narrativa lógica e acionável:
 
-- **Descritiva** – levantamento do cenário atual e perfil dos funcionários;
-- **Diagnóstica** – teste de hipóteses para identificar as causas da rotatividade;
-- **Prescritiva** – recomendações práticas com base nos achados;
-- **Preditiva** – modelagem futura (proposta para os próximos passos).
+- **Descritiva** – levantamento do cenário atual de como estao os números dos pedidos da empresa;
+- **Diagnóstica** – descobrir o motivo de porque o ano de 2018 esta com a tedencia de queda;
+- **Preditiva** – fazer uma previsao de Quantos pedidos serão feitos nos meses de setembro a dezembro de 2018?;
+- **Prescritiva** – Dentre todas as alavancas do negocio, quais você recomendaria alterar para aumentar o numero de pedidos?.
 
 A modelagem dos dados seguiu o método **Fato-Dimensão**.
 
