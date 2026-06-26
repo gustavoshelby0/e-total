@@ -48,14 +48,16 @@ Produto (O que Foi Vendido)	product_id, product_category_name
 Pedido (Transação / Cabeçalho)	order_id, order_status (para saber se foi entregue, cancelado, etc.)
 Item do Pedido (Linha / Sequência)	order_item_id (identifica a posição do produto dentro do pedido)
 
+# Mind Map - Hipóteses
 
 --- fiz o mandmap de hipoteses para me guiar na analise, isso me da contexto sobre a area, mesmo eu sendo novo no setor eu poderei me adptar 
 
 aqui abaixo estaa o prototipo do painel, aqui eu ja fiz a priorizacao do fato-dimensao com maior relevancia para essa analise
 
+
 https://img.notionusercontent.com/s3/prod-files-secure%2F2b76fb90-3276-8107-9a2b-0003db8f3f1b%2F10ebc204-6354-4b32-96eb-d2d3b9968fd1%2Fimage.png/size/w=2000?exp=1782502229&sig=6q7nVkLP-2bKHnd-rEDeJ3C46E227qeWeNqb6lQ37do&imgBuildSrc=presignImageUrl&id=37c6fb90-3276-80bf-bd3b-c27508a04c5f&table=block&userId=2cdd872b-594c-8197-aa3d-0002004cefb4&mtd=com
 
-# Mind Map - Hipóteses
+
 
 ## 1. Pedidos
 
