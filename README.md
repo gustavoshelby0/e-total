@@ -1,21 +1,15 @@
-# Análise de Turnover da IBM
+# Análise de Vendas da E-total
 
 # Problema de Negócio
 
-Contexto: A IBM, gigante global de tecnologia e consultoria, possui um quadro extenso de talentos em um mercado altamente competitivo.
+Vamos imaginar uma empresa de e-commerce chamada "E-Total". Ela foi fundada há dez
+anos por um empreendedor visionário, John, que viu uma oportunidade no mercado para criar uma plataforma online que oferecesse uma ampla variedade de produtos, desde eletrônicos e roupas até produtos de beleza e utensílios domésticos.
 
-Problema interno do RH: A alta taxa de turnover (Attrition) está gerando custos enormes – repor um profissional pode consumir de 50% a 200% do salário anual do cargo.
+Nos primeiros anos, a E-Total enfrentou desafios significativos ao estabelecer sua presença online e construir parcerias com fornecedores em diversas categorias de produtos.
+Agora, após uma década de operação bem-sucedida, a E-Total está enfrentando uma
+decisão estratégica crucial sobre seu crescimento futuro. 
 
-Análise proposta: Vamos cruzar a variável Attrition com os principais fatores internos para descobrir o que está expulsando nossos talentos:
-
-Satisfação no trabalho;
-
-Realização de horas extras;
-Faixa salarial;
-Tempo de casa;
-Equilíbrio entre vida e trabalho.
-
-Resultado prático: Entregaremos ao RH da IBM uma lista objetiva de fatores de risco (ex: perfis com baixa satisfação + muitas horas extras). Com isso, o time poderá agir preventivamente, ajustando políticas e criando planos de retenção antes que o pedido de demissão chegue.
+Para tomar essa decisão estratégica, a E-Total precisa entender melhor o histórico de seus números de pedidos.
 
 # Premissas da análise
 
