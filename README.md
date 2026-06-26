@@ -116,14 +116,17 @@ Além disso, a queda no número de vendedores e a estabilização do número tot
 
 ## Resultados (Descritiva + Prescritiva)
 
-**Panorama Descritivo:**  
-A taxa geral de turnover identificada foi de X% (coloque o valor real). O perfil médio dos desligamentos concentra-se em profissionais com até 3 anos de casa, faixa etária de 25 a 35 anos e cargos operacionais/técnicos.
+Mes  pedidos 
+9    347 
+10   304 
+11   441 
+12   326 
 
-**Recomendações Prescritivas (ações imediatas):**
+Há um erro médio de 37 pedidos, para mais ou para menos.
+Estamos com uma margem de erro de 23% nas previsões de pedidos para os meses de agosto a dezembro de 2018 da E-Total.
 
-1. **Revisão da política de horas extras** – instituir banco de horas ou compensação financeira mais atrativa para áreas com maior incidência de saídas.
-2. **Plano de aceleração para novos talentos** – criar trilhas de desenvolvimento acelerado para funcionários com menos de 3 anos e alto potencial.
-3. **Correção salarial competitiva** – realizar benchmarking de mercado para ajustar os salários dos cargos com defasagem identificada.
+
+
 
 📥 **Baixe a apresentação completa em PowerPoint:**  
 [Clique aqui para acessar o arquivo](https://docs.google.com/presentation/d/1ZAYDpxq3G5c3JzxRrJV63NLcst2hbMUj/edit?slide=id.p1#slide=id.p1) (em seguida, clique em *Download* ou *View raw*).
