@@ -48,7 +48,43 @@ Produto (O que Foi Vendido)	product_id, product_category_name
 Pedido (Transação / Cabeçalho)	order_id, order_status (para saber se foi entregue, cancelado, etc.)
 Item do Pedido (Linha / Sequência)	order_item_id (identifica a posição do produto dentro do pedido)
 
----
+
+--- fiz o mandmap de hipoteses para me guiar na analise, isso me da contexto sobre a area, mesmo eu sendo novo no setor eu poderei me adptar 
+
+aqui abaixo estaa o prototipo do painel, aqui eu ja fiz a priorizacao do fato-dimensao com maior relevancia para essa analise
+
+https://img.notionusercontent.com/s3/prod-files-secure%2F2b76fb90-3276-8107-9a2b-0003db8f3f1b%2F10ebc204-6354-4b32-96eb-d2d3b9968fd1%2Fimage.png/size/w=2000?exp=1782502229&sig=6q7nVkLP-2bKHnd-rEDeJ3C46E227qeWeNqb6lQ37do&imgBuildSrc=presignImageUrl&id=37c6fb90-3276-80bf-bd3b-c27508a04c5f&table=block&userId=2cdd872b-594c-8197-aa3d-0002004cefb4&mtd=com
+
+# Mind Map - Hipóteses
+
+## 1. Pedidos
+
+- O número de pedidos ao longo do tempo.
+- Tendência de pedidos por ano.
+- Tendência de pedidos por mês.
+- Preço médio por pedido.
+- Média de pedidos.
+
+## 2. Produtos
+
+- O número de pedidos por categoria.
+- Contribuição percentual de cada categoria nos pedidos ao longo dos meses.
+- Os produtos que mais contribuem com os pedidos.
+- Avaliação média dos produtos por pedido.
+- Preço médio dos produtos por categoria.
+
+## 3. Clientes
+
+- O número de pedidos por estado de residência.
+- O número de pedidos por cidade de residência.
+- O número de pedidos por faixa etária.
+- O número de pedidos por estado civil.
+- O número de pedidos por gênero.
+
+## 4. Vendedores
+
+- O número de pedidos por estado de residência do vendedor.
+- O número de pedidos por cidade de residência do vendedor.
 
 ## Hipóteses Analíticas (Priorizadas)
 
@@ -66,12 +102,21 @@ Critérios de priorização: dados disponíveis + potencial de geração de insi
 
 ## Insights da Análise (Diagnóstica)
 
-Os cruzamentos entre as dimensões e a variável `Attrition` revelaram os seguintes direcionadores de rotatividade:
+Hipotese do problema de negocio
 
-- **H4 validada** – a incidência de horas extras está fortemente correlacionada ao desligamento voluntário.
-- **H6 validada** – funcionários com menos de 3 anos de empresa apresentam taxa de saída significativamente maior.
-- **H5 parcialmente validada** – a defasagem salarial em relação à média do cargo impacta a decisão de sair, especialmente em níveis hierárquicos intermediários.
-- As demais hipóteses (H1, H2, H3 e H7) não apresentaram correlação estatisticamente relevante no dataset analisado.
+O numero de pedidos diminiu em 2018 devido a diminuicao no numero clientes
+O numero de pedidos diminui em 2018 devido ao aumento no numero de vendedores
+O numero de pedidos diminui em 2018 devido ao aumento no numero de produtos disponiveis
+O numero de pedidos diminui em 2018 devido ao aumento do preco medio dos produtos produtos
+O numero de pedidos diminui em 2018 devido ao aumento do numero de categorias disponiveis
+
+Os cruzamentos entre as dimensões e a variável `order_id` revelaram os seguintes direcionadores de rotatividade:
+
+
+Segundo a análise gráfica e as correlações, podemos observar que a queda no número de pedidos em 2018 e o aumento do preço médio foram fortemente influenciados pela diminuição do número de compradores.
+
+Além disso, a queda no número de vendedores e a estabilização do número total de categorias mostram uma estagnação na entrada de novos vendedores e no lançamento de novos produtos.
+
 
 ---
 
