@@ -30,13 +30,13 @@ A modelagem dos dados seguiu o método **Fato-Dimensão**.
 ## Definição do Escopo Analítico
 
 **Pergunta Aberta:**  
-*Quais fatores mais contribuem para o turnover de funcionários?*
+*como estão os números dos pedidos da empresa*
 
 **Pergunta Fechada:**  
-*O turnover está relacionado a remuneração abaixo da média do cargo? À realização de horas extras? À falta de promoções? À ausência de plano de carreira?*
+*Pergunta fechada: Como estão as vendas da empresa nos últimos 3 anos, considerando todos os produtos que a E-Total vende na modalidade online?*
 
 **Coluna Fato (variável alvo):**  
-`Attrition` – indica se o funcionário permanece ou já se desligou da empresa.
+`order_id` – quanto feito uma contagem indica o numero de vendas feita pela empresa.
 
 **Dimensões analisadas:**  
 
