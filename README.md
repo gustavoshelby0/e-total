@@ -88,15 +88,7 @@ https://img.notionusercontent.com/s3/prod-files-secure%2F2b76fb90-3276-8107-9a2b
 
 ## Hipóteses Analíticas (Priorizadas)
 
-Critérios de priorização: dados disponíveis + potencial de geração de insights acionáveis.
-
-- **H1:** Profissionais casados têm menor rotatividade.
-- **H2:** Profissionais que passaram por muitas empresas têm alta rotatividade.
-- **H3:** Profissionais com baixa qualidade de vida (satisfação/equilíbrio) têm maior rotatividade.
-- **H4:** Profissionais que fazem hora extra têm alta rotatividade.
-- **H5:** Profissionais com remuneração abaixo da média do cargo têm alta rotatividade.
-- **H6:** Profissionais com menos de 3 anos de casa têm maior rotatividade.
-- **H7:** Profissionais em cargos iniciais (Jrs/Estagiários) têm maior rotatividade.
+como e uma analise descritiva, entao nao ouve hipoteses analiticas a serem validadas
 
 ---
 
