@@ -135,6 +135,4 @@ Estamos com uma margem de erro de 23% nas previsões de pedidos para os meses de
 
 ## Próximos Passos (Preditiva)
 
-Embora o dataset atual não possua dimensão temporal para análises de série histórica, propomos como evolução natural a construção de um **modelo preditivo de classificação** (ex.: Regressão Logística ou Random Forest).
 
-Esse modelo utilizará as variáveis comportamentais, demográficas e de carreira já mapeadas para estimar, em tempo real, a **probabilidade de desligamento** de cada funcionário ativo. Com essa ferramenta, o RH poderá atuar de forma proativa, antecipando ações de retenção antes que a saída ocorra.
