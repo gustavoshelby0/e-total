@@ -114,7 +114,7 @@ Com base nos cruzamentos entre as dimensões e a variável `order_id`, os princi
 4. **Ampliação de categorias** – Lançar novas linhas de produtos para atrair diferentes perfis de consumidores e aumentar a base de clientes.
 
 📥 **Baixe a apresentação completa em PowerPoint:**  
-[Clique aqui para acessar o arquivo](https://docs.google.com/presentation/d/1ZAYDpxq3G5c3JzxRrJV63NLcst2hbMUj/edit?slide=id.p1#slide=id.p1) (em seguida, clique em *Download* ou *View raw*).
+[Clique aqui para acessar o arquivo](https://docs.google.com/spreadsheets/d/1e_e5V6vtJ8W0nMKzobWV7rrcbcd0DoYy/edit?usp=drive_link&ouid=114029927907630112086&rtpof=true&sd=true) (em seguida, clique em *Download* ou *View raw*).
 
 ---
 
