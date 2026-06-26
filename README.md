@@ -1,5 +1,8 @@
 # Análise de Vendas da E-Total
 
+📥 **Baixe a apresentação completa no Excel:**  
+[Clique aqui para acessar o arquivo](https://docs.google.com/spreadsheets/d/1e_e5V6vtJ8W0nMKzobWV7rrcbcd0DoYy/edit?usp=drive_link&ouid=114029927907630112086&rtpof=true&sd=true) (em seguida, clique em *Download* ou *View raw*).
+
 ## Problema de Negócio
 
 A E-Total é um e-commerce com uma década de atuação, oferecendo produtos que vão desde eletrônicos e roupas até beleza e utensílios domésticos. Após anos de crescimento, a empresa chega a um momento decisivo para sua estratégia de expansão. Para embasar essa decisão, é fundamental compreender a fundo o histórico de seus pedidos e o comportamento de suas vendas.
@@ -106,14 +109,7 @@ Com base nos cruzamentos entre as dimensões e a variável `order_id`, os princi
 
 > **Acurácia da previsão:** O erro médio absoluto (MAE) foi de aproximadamente **37 pedidos** , representando uma margem de erro de **23%** nas projeções para o período.
 
-**Recomendações Prescritivas (ações para reverter a queda):**
-
-1. **Reativação de clientes** – Implementar campanhas de e-mail marketing e cupons de desconto direcionados a clientes que não compram há mais de 90 dias.
-2. **Atração de novos vendedores** – Criar programas de incentivo para aumentar o número de sellers ativos, expandindo o catálogo e a competitividade de preços.
-3. **Revisão de precificação** – Avaliar a elasticidade-preço das categorias com maior queda, buscando equilibrar ticket médio e volume de vendas.
-4. **Ampliação de categorias** – Lançar novas linhas de produtos para atrair diferentes perfis de consumidores e aumentar a base de clientes.
-
-📥 **Baixe a apresentação completa em PowerPoint:**  
+📥 **Baixe a apresentação completa no Excel:**  
 [Clique aqui para acessar o arquivo](https://docs.google.com/spreadsheets/d/1e_e5V6vtJ8W0nMKzobWV7rrcbcd0DoYy/edit?usp=drive_link&ouid=114029927907630112086&rtpof=true&sd=true) (em seguida, clique em *Download* ou *View raw*).
 
 ---
