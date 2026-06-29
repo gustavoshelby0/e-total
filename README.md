@@ -49,7 +49,7 @@ A modelagem dos dados seguiu o método **Fato-Dimensão**.
 
 ---
 
-## Mind Map – Direcionadores de Análise
+## Mind Map – Direcionadores da Análise Descritiva
 
 Para orientar a exploração dos dados, mesmo sendo um analista novo no setor, foram mapeados os seguintes grupos de perguntas:
 
@@ -75,8 +75,6 @@ Para orientar a exploração dos dados, mesmo sendo um analista novo no setor, f
 ---
 
 ## Hipóteses Analíticas (Diagnóstica)
-
-Embora o foco inicial seja uma análise descritiva, levantamos hipóteses de negócio para direcionar a investigação sobre a queda de pedidos em 2018:
 
 - **H1:** A queda no número de pedidos em 2018 se deve à **diminuição no número de clientes ativos**.
 - **H2:** A queda se deve ao **aumento no número de vendedores** (diluição da base).
